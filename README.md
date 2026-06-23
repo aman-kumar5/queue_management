@@ -1,6 +1,8 @@
 # Queue Cure – Smart Clinic Token Management System
 
 Queue Cure is a real-time digital queue management application designed for modern clinics and hospitals. The platform consists of a **Receptionist Dashboard** for administrative actions (adding patients, calling tokens, resetting queues) and a live **Patient Waiting Room Display** with real-time audio announcements, personalized patient progress statistics, and dynamic waiting time predictions.
+**For logging :- https://queue-management-frontend-j5ex.onrender.com/login  
+use reception desk login => employee id = admin , password = receptionist123**
 
 ---
 
