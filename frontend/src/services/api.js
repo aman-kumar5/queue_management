@@ -1,4 +1,6 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.MODE === 'production'
+  ? 'https://queue-management-backend2.onrender.com/api'
+  : 'http://localhost:5000/api';
 
 import axios from 'axios';
 
