@@ -10,7 +10,7 @@ const httpServer = http.createServer(app);
 
 // Enable CORS for frontend client
 app.use(cors({
-  origin: '*', // In production, replace with specific origins
+  origin: true, // Echoes the request origin to allow credentials
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 // Socket.IO Setup
 const io = new Server(httpServer, {
   cors: {
-    origin: '*',
+    origin: true,
     methods: ['GET', 'POST']
   }
 });

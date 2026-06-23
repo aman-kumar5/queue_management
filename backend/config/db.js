@@ -2,11 +2,11 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const mysql = require('mysql2/promise');
 
-const DB_HOST = process.env.DB_HOST;
-const DB_USER = process.env.DB_USER;
-const DB_PASS = process.env.DB_PASS;
-const DB_NAME = process.env.DB_NAME;
-const DB_PORT = process.env.DB_PORT;
+const DB_HOST = process.env.DB_HOST || 'localhost';
+const DB_USER = process.env.DB_USER || 'root';
+const DB_PASS = process.env.DB_PASS || 'Amankumar@1';
+const DB_NAME = process.env.DB_NAME || 'queue_cure';
+const DB_PORT = process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10) : 3306;
 
 let sequelize;
 
